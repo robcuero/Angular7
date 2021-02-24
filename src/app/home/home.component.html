@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand text-white">SISTEMA LOAYZA</a>
+  <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+</nav>
+
+<div class="card m-5" style="width:18rem" *ngIf="userDetails">
+  <ul class="list-group">
+    <li class="list-group-item"><strong>Usuario : </strong>{{userDetails.Nombre}}</li>
+    <li class="list-group-item"><strong>Nombre : </strong>{{userDetails.Apellido}}</li>
+    <li class="list-group-item"><strong>Correo : </strong>{{userDetails.Correo}}</li>
+  </ul>
+</div>
